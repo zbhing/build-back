@@ -38,7 +38,7 @@ public class Knife4jConfig {
                 .groupName("1.0")
                 .select()
                 //这里指定扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.build.sys,com.build.core"))
+                .apis(RequestHandlerSelectors.basePackage("com.build.bus"))
                 .paths(PathSelectors.any())
                 .build();
     }
