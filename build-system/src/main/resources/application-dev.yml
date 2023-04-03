@@ -1,0 +1,51 @@
+server:
+  port: 6600
+spring:
+  application:
+    name: sys-cloud
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    url: jdbc:mysql://123.60.97.109:3306/build?rewriteBatchedStatements=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: devloop
+    password: mysqldev
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 10  #最小空闲连接数
+      maximum-pool-size: 30 #最大连接数，默认是 10
+      auto-commit: true
+      idle-timeout: 30000  #空闲连接最大存活时间（毫秒）
+      pool-name: HikariCP
+      max-lifetime: 900000
+      connection-timeout: 10000  #连接的超时时间，默认30000 (毫秒)
+      connection-test-query: SELECT 1 # select * from dual 不适用于mysql select 1 from dual 兼容oracle, mysql
+
+# mybatis plus 设置
+mybatis-plus:
+  mapper-locations: classpath*:com/build/**/**/xml/*Mapper.xml,classpath*:/mapper/**/*.xml
+  global-config:
+    banner: false # 关闭MP3.0自带的banner
+    db-config:
+      id-type: ASSIGN_ID  # 主键类型
+      table-underline: true # 默认数据库表下划线命名
+  configuration: # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  configuration-properties:
+    # 配置流程引擎参数，详情可见 DatabaseConfiguration
+    blobType: BLOB
+    boolValue: TRUE
+    # 不要设置库名，否则会出现双库名 bug
+    prefix: ''
+  type-aliases-package: com.build.**.entity
+  # logback 日志
+logging:
+  config: classpath:logback-spring.xml
+  # 日志文件路径, 部署及运行时可改写以覆盖（中文注释在windows等运行时可能会出问题，这里只是写给大家看的注释）
+  level:
+    com.build: debug
+
+logs:
+  path: /Library/zbh/idea/build-back-project/
+
