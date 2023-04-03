@@ -1,8 +1,8 @@
-package com.build.sys.entity;
+package com.build.bus.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.build.core.base.BaseEntity;
+import com.build.bus.base.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

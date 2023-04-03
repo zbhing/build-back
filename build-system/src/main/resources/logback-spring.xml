@@ -165,7 +165,7 @@
             <appender-ref ref="WARN_FILE" />
             <appender-ref ref="ERROR_FILE" />
         </root>
-        <logger name="com.build.sys.SysCloudApplication" level="info"/> <!-- 特定某个类打印info日志, 比如application启动成功后的提示语 -->
+        <logger name="com.build.bus.SysCloudApplication" level="info"/> <!-- 特定某个类打印info日志, 比如application启动成功后的提示语 -->
     </springProfile>
 
 </configuration>

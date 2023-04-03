@@ -1,4 +1,4 @@
-package com.build.core.base;
+package com.build.bus.base;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

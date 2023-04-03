@@ -1,9 +1,9 @@
-package com.build.sys.service.impl;
+package com.build.bus.service.impl;
 
-import com.build.core.base.BaseServiceImpl;
-import com.build.sys.entity.TUser;
-import com.build.sys.mapper.TUserMapper;
-import com.build.sys.service.TUserService;
+import com.build.bus.base.BaseServiceImpl;
+import com.build.bus.entity.TUser;
+import com.build.bus.mapper.TUserMapper;
+import com.build.bus.service.TUserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.build.core.mybatis;
+package com.build.bus.mybatis;
 
 /**
  * @author zbhing

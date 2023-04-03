@@ -1,4 +1,4 @@
-package com.build.core.base;
+package com.build.bus.base;
 
 import java.util.Date;
 

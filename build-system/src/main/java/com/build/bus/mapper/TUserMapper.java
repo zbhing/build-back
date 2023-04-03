@@ -1,7 +1,7 @@
-package com.build.sys.mapper;
+package com.build.bus.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.build.sys.entity.TUser;
+import com.build.bus.entity.TUser;
 
 /**
  * @author zbhing

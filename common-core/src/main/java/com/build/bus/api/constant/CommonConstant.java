@@ -1,4 +1,4 @@
-package com.build.core.api.constant;
+package com.build.bus.api.constant;
 
 /**
  * @author zbhing

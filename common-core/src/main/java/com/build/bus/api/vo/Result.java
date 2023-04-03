@@ -1,6 +1,6 @@
-package com.build.core.api.vo;
+package com.build.bus.api.vo;
 
-import com.build.core.api.constant.CommonConstant;
+import com.build.bus.api.constant.CommonConstant;
 
 import java.io.Serial;
 import java.io.Serializable;

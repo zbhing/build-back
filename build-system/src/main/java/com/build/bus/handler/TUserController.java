@@ -1,18 +1,17 @@
-package com.build.sys.handler;
+package com.build.bus.handler;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.build.core.api.vo.Result;
-import com.build.core.base.BaseController;
-import com.build.core.base.LoginModel;
-import com.build.core.mybatis.TenantContext;
-import com.build.sys.entity.TUser;
-import com.build.sys.service.TUserService;
+import com.build.bus.api.vo.Result;
+import com.build.bus.base.BaseController;
+import com.build.bus.base.LoginModel;
+import com.build.bus.mybatis.TenantContext;
+import com.build.bus.entity.TUser;
+import com.build.bus.service.TUserService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
